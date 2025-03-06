@@ -1,0 +1,26 @@
+
+/* Estilo da animação */
+@keyframes moverGif {
+  0% {
+      left: -200px; /* Começa fora da tela à esquerda */
+  }
+  100% {
+      left: 100%; /* Vai até fora da tela à direita */
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: blueviolet
+  position: relative;
+  overflow-x: hidden; 
+}
+
+.gif {
+  position: absolute;
+  top: 0; /* Coloca o GIF no topo da tela */
+  left: -200px; /* Inicia fora da tela, à esquerda */
+  width: 200px; /* Ajuste a largura do seu GIF */
+  animation: moverGif 10s linear infinite; /* Animação contínua de 10 segundos */
+}
